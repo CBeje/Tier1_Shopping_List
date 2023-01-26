@@ -1,0 +1,78 @@
+.main-container {
+    font-family: 'Quicksand', sans-serif;
+    padding-top: 130px;
+    height: 100%;
+    .appTitle {
+        font-size: 55px;
+        color:#6f75b4;
+        span {
+            color: limegreen;
+        }
+    }
+    .message {
+        height: 30px;
+        width: 50%;
+        margin: auto;
+        color: red;
+    }
+    #Input {
+        width: auto;
+        display: inline;
+    }
+    .addBtn {
+        background-color: #6f75b4;
+        width: 50px;
+        font-weight: 600;
+        &:focus {
+            border: none;
+            outline: none;
+        }
+        &:focus-visible {
+            border: none;
+            outline: none;
+        }
+        &:active {
+            border: none;
+        }
+    }
+    
+    #List {
+
+        .item {
+            width: 50%;
+            margin: auto;
+            &:hover {
+                cursor: pointer;
+            }
+            &:nth-child(even) {
+                background: #fbefef;
+            }
+        }
+        .removed {
+            display: none;
+        }
+        .checked {
+            text-decoration: line-through;
+            color: darkgray;
+            &:before {
+                content: '';
+                position: absolute;
+                border-color:limegreen;
+                border-style: solid;
+                border-width: 0 2px 2px 0;
+                top: 10px;
+                left: 16px;
+                transform: rotate(45deg);
+                height: 15px;
+                width: 7px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+

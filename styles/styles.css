@@ -1,0 +1,67 @@
+.main-container {
+  font-family: "Quicksand", sans-serif;
+  padding-top: 130px;
+  height: 100%;
+}
+.main-container .appTitle {
+  font-size: 55px;
+  color: #6f75b4;
+}
+.main-container .appTitle span {
+  color: limegreen;
+}
+.main-container .message {
+  height: 30px;
+  width: 50%;
+  margin: auto;
+  color: red;
+}
+.main-container #Input {
+  width: auto;
+  display: inline;
+}
+.main-container .addBtn {
+  background-color: #6f75b4;
+  width: 50px;
+  font-weight: 600;
+}
+.main-container .addBtn:focus {
+  border: none;
+  outline: none;
+}
+.main-container .addBtn:focus-visible {
+  border: none;
+  outline: none;
+}
+.main-container .addBtn:active {
+  border: none;
+}
+.main-container #List .item {
+  width: 50%;
+  margin: auto;
+}
+.main-container #List .item:hover {
+  cursor: pointer;
+}
+.main-container #List .item:nth-child(even) {
+  background: #fbefef;
+}
+.main-container #List .removed {
+  display: none;
+}
+.main-container #List .checked {
+  text-decoration: line-through;
+  color: darkgray;
+}
+.main-container #List .checked:before {
+  content: "";
+  position: absolute;
+  border-color: limegreen;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script defer src="app.js"></script>
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>Shopping list</title>
+</head>
+<body>
+  <div class="container justify-content-center main-container">
+    <h1 class="text-center appTitle"><span>e</span>zee</h1>
+    <h6 class="text-center">a simple shopping list</h6>
+    <div class="text-center">
+      <input class="form-control" id="Input" type="text" placeholder="Add item here..."  required>
+      <span onclick="addItem()">
+        <button type="button" class="btn btn-primary addBtn">+</button>
+      </span>
+      <div class="message"></div>
+    </div>
+    <ul id="List" class="list-group text-center">
+    </ul>
+    <div class="text-center empty">Use the + button to add items.</div>
+  </div>
+</body>
+</html>
