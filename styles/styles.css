@@ -46,9 +46,6 @@
 .main-container #List .item:nth-child(even) {
   background: #fbefef;
 }
-.main-container #List .removed {
-  display: none;
-}
 .main-container #List .checked {
   text-decoration: line-through;
   color: darkgray;

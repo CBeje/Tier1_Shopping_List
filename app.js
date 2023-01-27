@@ -32,7 +32,7 @@ function addItem() {
   for (i = 0; i < close.length; i++) {
     close[i].onclick = function () {
       const listItem = this.parentElement;
-      listItem.classList.add("removed");
+      listItem.remove();
       noOfItems--;
 
       // check if list has items
