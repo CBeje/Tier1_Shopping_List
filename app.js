@@ -31,9 +31,10 @@ function addItem() {
   // close button handler
   for (i = 0; i < close.length; i++) {
     close[i].onclick = function () {
-      const div = this.parentElement;
-      div.classList.add("removed");
+      const listItem = this.parentElement;
+      listItem.classList.add("removed");
       noOfItems--;
+
       // check if list has items
       if (noOfItems === 0) {
         empty.textContent = "Your list is empty.";
